@@ -20,10 +20,10 @@ body{font-family:"Raleway",sans-serif;background:var(--white);color:var(--ink);o
 img{display:block;max-width:100%;}a{text-decoration:none;color:inherit;}
 
 /* HEADER */
-#hdr{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:76px;background:rgba(247,242,234,0.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(28,53,38,0.06);transition:height .4s;}
-#hdr.scrolled{height:60px;}
-.logo-img{height:46px;width:auto;transition:height .4s;}
-#hdr.scrolled .logo-img{height:36px;}
+#hdr{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:92px;background:rgba(247,242,234,0.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(28,53,38,0.06);transition:height .4s;}
+#hdr.scrolled{height:70px;}
+.logo-img{height:74px;width:auto;transition:height .4s;}
+#hdr.scrolled .logo-img{height:54px;}
 nav{display:flex;gap:40px;align-items:center;}
 nav a{font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--charcoal);position:relative;transition:color .25s;}
 nav a::after{content:"";position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--amber);transition:width .35s;}
@@ -32,7 +32,7 @@ nav a:hover{color:var(--forest);}nav a:hover::after{width:100%;}
 .nav-cta:hover{background:var(--forest);color:var(--cream);}
 
 /* HERO */
-.hero{margin-top:76px;min-height:calc(100vh - 76px);position:relative;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;background:var(--forest);}
+.hero{margin-top:92px;min-height:calc(100vh - 92px);position:relative;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;background:var(--forest);}
 .hero-left{display:flex;flex-direction:column;justify-content:center;padding:80px 64px 80px 80px;position:relative;z-index:2;}
 .hero-left::before{content:"";position:absolute;inset:0;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg width%3D%22120%22 height%3D%22120%22 viewBox%3D%220 0 120 120%22 xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath d%3D%22M60 15 Q85 35 80 65 Q75 90 50 85 Q25 80 30 55 Q35 25 60 15Z%22 fill%3D%22%23b8ceaa%22/%3E%3Cpath d%3D%22M60 15 L60 105%22 stroke%3D%22%23b8ceaa%22 stroke-width%3D%221%22/%3E%3C/svg%3E");background-size:140px 140px;}
 .hero-right{position:relative;overflow:hidden;}
@@ -89,7 +89,7 @@ nav a:hover{color:var(--forest);}nav a:hover::after{width:100%;}
 .cred-label{font-size:11px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--mid);}
 
 /* TABS */
-.tabs-bar{background:var(--white);border-bottom:1px solid rgba(28,53,38,.07);padding:0 80px;display:flex;position:sticky;top:76px;z-index:100;box-shadow:0 2px 16px rgba(28,53,38,.04);}
+.tabs-bar{background:var(--white);border-bottom:1px solid rgba(28,53,38,.07);padding:0 80px;display:flex;position:sticky;top:92px;z-index:100;box-shadow:0 2px 16px rgba(28,53,38,.04);}
 .tab-btn{font-family:"Raleway",sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--light);padding:20px 32px;border:none;border-bottom:2px solid transparent;background:none;cursor:pointer;transition:all .3s;}
 .tab-btn:hover{color:var(--forest);}
 .tab-btn.active{color:var(--forest);border-bottom-color:var(--amber);}
@@ -164,7 +164,7 @@ nav a:hover{color:var(--forest);}nav a:hover::after{width:100%;}
 /* FOOTER */
 footer{background:var(--ink);}
 .ft-main{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;padding:80px 80px 64px;}
-.fl-img{height:50px;width:auto;margin-bottom:20px;filter:brightness(0) invert(1);opacity:.6;}
+.fl-img{height:68px;width:auto;margin-bottom:20px;filter:brightness(0) invert(1);opacity:.7;}
 .ft-tag{font-size:14px;font-weight:300;color:rgba(247,242,234,.35);line-height:1.75;max-width:270px;margin-bottom:28px;}
 .ft-soc{display:flex;gap:12px;}
 .soc-a{width:36px;height:36px;border:1px solid rgba(247,242,234,.12);display:flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:.08em;color:rgba(247,242,234,.4);text-transform:uppercase;transition:all .25s;}
@@ -317,7 +317,7 @@ body.intro-active { overflow:hidden; }
 @media(max-width:1100px){
   .hero{grid-template-columns:1fr;}
   .hero-right{display:none;}
-  .hero-left{padding:64px 48px;min-height:calc(100vh - 76px);}
+  .hero-left{padding:64px 48px;min-height:calc(100vh - 92px);}
   #story{grid-template-columns:1fr;}
   .story-left{min-height:300px;}
   .story-right{padding:56px 40px;}
@@ -615,7 +615,7 @@ body.intro-active { overflow:hidden; }
 @keyframes introFadeUp {
   to { opacity:1; transform:translateY(0); }
 }
-.intro-logo { height:68px; width:auto; filter:brightness(0) invert(1); opacity:.9; }
+.intro-logo { height:92px; width:auto; filter:brightness(0) invert(1); opacity:.92; }
 /* Divider line that draws itself */
 .intro-line {
   width:0; height:1px;
@@ -869,7 +869,7 @@ setTimeout(() => { document.body.style.overflow = ""; }, 4000);
   <div class="hero-left">
     <span class="hero-eb">Natural &middot; Bamboo &middot; Handcrafted</span>
     <h1 class="hero-h1">Where ritual<br>meets <em>nature's</em><br>finest craft</h1>
-    <p class="hero-sub">Premium natural bath tools and handcrafted Indian bags &mdash; made without compromise, designed to last.</p>
+    <p class="hero-sub">Natural bath tools and handcrafted Indian bags &mdash; made to be used with intention, cared for with ritual, and returned to the earth when their time comes.</p>
     <div class="hero-ctas">
       <a href="#bath" class="btn-primary">Explore Bath Collection</a>
       <a href="#bags" class="btn-secondary">Discover Our Bags</a>
@@ -886,20 +886,22 @@ setTimeout(() => { document.body.style.overflow = ""; }, 4000);
 
 <div class="ticker" aria-hidden="true">
   <div class="ttrack">
-    <span class="titem">100% Natural Materials <span class="tdot"></span></span>
+    <span class="titem">Pure Living &middot; Pure Materials <span class="tdot"></span></span>
+    <span class="titem">100% Natural &middot; Zero Synthetics <span class="tdot"></span></span>
     <span class="titem">Bamboo &middot; Sisal &middot; Beechwood <span class="tdot"></span></span>
     <span class="titem">Handcrafted in India <span class="tdot"></span></span>
-    <span class="titem">No Synthetics &middot; No Shortcuts <span class="tdot"></span></span>
+    <span class="titem">Live More Naturally <span class="tdot"></span></span>
     <span class="titem">Shop on Shopee &amp; TikTok <span class="tdot"></span></span>
-    <span class="titem">Laser-Etched Bamboo Branding <span class="tdot"></span></span>
-    <span class="titem">Eco-Friendly Packaging <span class="tdot"></span></span>
-    <span class="titem">100% Natural Materials <span class="tdot"></span></span>
+    <span class="titem">Laser-Etched Bamboo &middot; Biodegradable <span class="tdot"></span></span>
+    <span class="titem">From Nature, Back to Nature <span class="tdot"></span></span>
+    <span class="titem">Pure Living &middot; Pure Materials <span class="tdot"></span></span>
+    <span class="titem">100% Natural &middot; Zero Synthetics <span class="tdot"></span></span>
     <span class="titem">Bamboo &middot; Sisal &middot; Beechwood <span class="tdot"></span></span>
     <span class="titem">Handcrafted in India <span class="tdot"></span></span>
-    <span class="titem">No Synthetics &middot; No Shortcuts <span class="tdot"></span></span>
+    <span class="titem">Live More Naturally <span class="tdot"></span></span>
     <span class="titem">Shop on Shopee &amp; TikTok <span class="tdot"></span></span>
-    <span class="titem">Laser-Etched Bamboo Branding <span class="tdot"></span></span>
-    <span class="titem">Eco-Friendly Packaging <span class="tdot"></span></span>
+    <span class="titem">Laser-Etched Bamboo &middot; Biodegradable <span class="tdot"></span></span>
+    <span class="titem">From Nature, Back to Nature <span class="tdot"></span></span>
   </div>
 </div>
 
@@ -914,40 +916,40 @@ setTimeout(() => { document.body.style.overflow = ""; }, 4000);
           <path d="M26 28C14 40 16 60 26 68" stroke="#b8ceaa" stroke-width="1" fill="none" opacity=".3"/>
         </svg>
       </div>
-      <p class="story-quote">&ldquo;Living well begins with choosing materials honestly.&rdquo;</p>
-      <p class="story-attr">&mdash; The AVYA Philosophy</p>
+      <p class="story-quote">&ldquo;To live purely is to choose nature &mdash; in what you touch, what you use, and what you leave behind.&rdquo;</p>
+      <p class="story-attr">&mdash; The AVYA Pure Living Philosophy</p>
     </div>
   </div>
   <div class="story-right">
     <span class="s-eyebrow">Our Story</span>
     <h2 class="s-title">Rooted in nature,<br><em>built with purpose</em></h2>
     <div class="story-body">
-      <p>AVYA began with a simple frustration &mdash; most self-care products are made from plastic, loaded with synthetics, and designed to be thrown away. We believed there was a better way.</p>
-      <p>Our <strong>bath collection</strong> sources directly from craftspeople who have worked with bamboo, sisal, and beechwood for generations. Every brush is made to be used with intention, loved through ritual, and eventually returned to the earth. No microplastics. No shortcuts.</p>
-      <p>Our <strong>bag collection</strong> is rooted in India&rsquo;s extraordinary handcraft heritage &mdash; block-printed cotton, hand-knotted macrame, and natural hemp, made by skilled artisans using techniques passed down across generations. Each bag carries the fingerprint of the hands that made it.</p>
-      <p>Two very different categories. One philosophy: <strong>choose materials honestly, make things beautifully, and let nothing go to waste.</strong></p>
+      <p>AVYA was born from a deeply personal conviction &mdash; that the way we care for ourselves should mirror how we choose to live: <strong>naturally, purely, and in harmony with the world around us.</strong></p>
+      <p>Our <strong>bath collection</strong> is crafted by artisans who have shaped bamboo, sisal, and beechwood for generations. Every brush is designed to be used with intention, cherished through daily ritual, and eventually returned to the earth. Pure materials from root to finish &mdash; no microplastics, no synthetics, no compromise.</p>
+      <p>Our <strong>bag collection</strong> honours India&rsquo;s extraordinary craft heritage &mdash; hand-block printed cotton, naturally dyed hemp, and hand-knotted macram&eacute;, made by skilled artisan communities using techniques carried across generations. Each piece carries the fingerprint of the hands that made it.</p>
+      <p>Two collections. One conviction: <strong>live more naturally, carry fewer synthetics, and leave a lighter, more beautiful mark on this earth.</strong></p>
     </div>
     <div class="story-divider"></div>
     <div class="story-pillars">
       <div class="story-pillar">
         <div class="story-pillar-icon">&#127807;</div>
-        <div class="story-pillar-title">No Synthetics</div>
-        <div class="story-pillar-text">Every material sourced from nature. No plastic. No compromise.</div>
+        <div class="story-pillar-title">Pure Materials</div>
+        <div class="story-pillar-text">Every fibre, bristle, and handle chosen for its natural origin. Nothing synthetic. Nothing that doesn&rsquo;t belong.</div>
       </div>
       <div class="story-pillar">
         <div class="story-pillar-icon">&#129309;</div>
-        <div class="story-pillar-title">Direct Craft</div>
-        <div class="story-pillar-text">Sourced directly from artisan communities, not mass factories.</div>
+        <div class="story-pillar-title">Artisan Hands</div>
+        <div class="story-pillar-text">Sourced directly from craftspeople, not mass factories. Real skill, real provenance.</div>
       </div>
       <div class="story-pillar">
         <div class="story-pillar-icon">&#127807;</div>
         <div class="story-pillar-title">Bamboo First</div>
-        <div class="story-pillar-text">Fast-growing, carbon-sequestering, biodegradable.</div>
+        <div class="story-pillar-text">Fast-growing, carbon-sequestering, and naturally antibacterial &mdash; bamboo is how nature builds better.</div>
       </div>
       <div class="story-pillar">
         <div class="story-pillar-icon">&#9851;</div>
-        <div class="story-pillar-title">Earth Returns</div>
-        <div class="story-pillar-text">Every product designed to biodegrade at end of life.</div>
+        <div class="story-pillar-title">Returns to Earth</div>
+        <div class="story-pillar-text">Every product made to biodegrade fully at end of life. Nature in, nature out.</div>
       </div>
     </div>
   </div>
@@ -972,14 +974,14 @@ setTimeout(() => { document.body.style.overflow = ""; }, 4000);
     <a href="#shop" class="view-all-link">Shop All &rarr;</a>
   </div>
   <div class="pgrid">
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bath-153.jpg" alt="Bamboo Body Brush" class="pimg" loading="lazy"><span class="pbadge">Bestseller</span><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Bamboo Body Brush</div><div class="pdesc">Bamboo handle + boar bristle &middot; Deep cleanse &amp; circulation boost</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bath-062.jpg" alt="Beechwood Body Brush" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Beechwood Body Brush</div><div class="pdesc">Beechwood + sisal &middot; Firm dry-brushing for exfoliation</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bath-1099.jpg" alt="Long Handle Body Brush" class="pimg" loading="lazy"><span class="pbadge badge-new">New</span><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Long Handle Brush</div><div class="pdesc">Extended reach &middot; Natural bristle for effortless back care</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bath-126.jpg" alt="Massage Body Brush" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Massage Body Brush</div><div class="pdesc">Boar bristle + massage beads &middot; Stimulates blood flow</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bath-086.jpg" alt="Large Body Brush" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Large Body Brush</div><div class="pdesc">Beechwood + sisal &middot; Full-coverage 13&times;8cm</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bath-zj-72.jpg" alt="Loofah Handle Brush" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Loofah Handle Brush</div><div class="pdesc">Grass tree + natural loofah &middot; Exfoliates &amp; biodegrades</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bath-685.jpg" alt="Bamboo Facial Brush" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Facial Brush</div><div class="pname">Bamboo Facial Brush</div><div class="pdesc">Bamboo + super fiber &middot; Ultra-gentle daily cleanse</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bath-686.jpg" alt="Soft Facial Brush" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Facial Brush</div><div class="pname">Soft Facial Brush</div><div class="pdesc">Bamboo + super fiber &middot; Sensitive skin safe</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="avya-oval-body-brush.jpg" alt="AVYA Oval Beechwood Body Brush" class="pimg" loading="lazy"><span class="pbadge">Bestseller</span><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Oval Body Brush</div><div class="pdesc">Beechwood + natural bristle &middot; Cotton strap &middot; Pure dry-brushing ritual</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="avya-mushroom-brush.jpg" alt="AVYA Beechwood Mushroom Brush" class="pimg" loading="lazy"><span class="pbadge badge-new">New</span><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Palm Mushroom Brush</div><div class="pdesc">Solid beechwood knob grip &middot; Dense natural bristles &middot; Deep lymphatic stimulation</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="avya-bamboo-round-brush.jpg" alt="AVYA Bamboo Round Body Brush" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Bamboo Round Brush</div><div class="pdesc">Bamboo base + sisal bristles &middot; Natural jute rope &middot; Zero synthetic materials</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="avya-massage-brush.jpg" alt="AVYA Massage Body Brush" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Massage Body Brush</div><div class="pdesc">Beechwood + boar bristle + massage nubs &middot; Circulation &amp; skin renewal in one</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="avya-long-back-brush.jpg" alt="AVYA Long Handle Back Brush" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Long-Handle Back Brush</div><div class="pdesc">Extended bamboo handle &middot; Natural loofah head &middot; Effortless full-back reach</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="avya-oval-body-brush-lifestyle.jpg" alt="AVYA Body Brush Lifestyle" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Body Brush</div><div class="pname">Dry Body Brush</div><div class="pdesc">Pure natural bristle &middot; Pre-shower ritual for radiant, energised skin</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bath-685.jpg" alt="Bamboo Facial Brush" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Facial Brush</div><div class="pname">Bamboo Facial Brush</div><div class="pdesc">Bamboo + ultra-soft natural fibre &middot; Gentle enough for daily cleansing</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bath-686.jpg" alt="Soft Facial Brush" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Facial Brush</div><div class="pname">Sensitive Facial Brush</div><div class="pdesc">Bamboo + microfibre &middot; Ideal for sensitive skin &middot; Replaces disposable cotton pads</div></div>
   </div>
 </div>
 </div>
@@ -990,16 +992,16 @@ setTimeout(() => { document.body.style.overflow = ""; }, 4000);
     <div><span class="s-eyebrow">Bags &amp; Accessories</span><h2 class="s-title">Handcrafted <em>Bag Collection</em></h2></div>
     <a href="#shop" class="view-all-link">Shop All &rarr;</a>
   </div>
-  <p class="bags-intro-text">Sourced directly from artisan communities across India &mdash; cotton canvas totes, hand-knotted macrame slings, natural hemp pouches, and hand-block printed handbags. Every piece carries the story of the hands that made it.</p>
+  <p class="bags-intro-text">Sourced directly from artisan communities across India &mdash; each bag is a piece of living craft. Woven cotton, hand-block printing, naturally dyed hemp, and hand-knotted macram&eacute;: techniques that have been passed from hand to hand for generations, now carried forward by AVYA.</p>
   <div class="pgrid">
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-evil-eye-tote.jpg" alt="Evil Eye Cotton Tote" class="pimg" loading="lazy"><span class="pbadge">Popular</span><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Evil Eye Cotton Tote</div><div class="pdesc">Boho evil eye motif &middot; Natural cotton canvas &middot; Ethically made</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-jaipuri-handcraft.jpg" alt="Jaipuri Handcraft Handbag" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Handbags</div><div class="pname">Jaipuri Handcraft Bag</div><div class="pdesc">Hand-block printed &middot; Rajasthani artisan craft tradition</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-summer-cotton-tote.jpg" alt="Summer Cotton Tote" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Summer Cotton Tote</div><div class="pdesc">Light, breezy everyday carry &middot; Natural unbleached cotton</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-print-cotton-tote.jpg" alt="Print Cotton Tote" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Print Cotton Tote</div><div class="pdesc">Vibrant hand-printed designs &middot; 100% natural cotton</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-office-tote.jpg" alt="Office Tote Bag" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Office Tote Bag</div><div class="pdesc">Structured &amp; clean &middot; Work-ready natural cotton canvas</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-macrame-sling.jpg" alt="Macrame Sling Bag" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Sling Bags</div><div class="pname">Macrame Sling Bag</div><div class="pdesc">Hand-knotted macrame &middot; Boho-craft at its finest</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-owl-tote.jpg" alt="Owl Cotton Tote" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Owl Cotton Tote</div><div class="pdesc">Whimsical owl motif &middot; Artisan-printed cotton canvas</div></div>
-    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-hemp-pouch.jpg" alt="Hemp Pouch Tote" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Hemp Pouch Tote</div><div class="pdesc">Natural hemp fibre &middot; Strong, sustainable, biodegradable</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-evil-eye-tote.jpg" alt="Evil Eye Cotton Tote" class="pimg" loading="lazy"><span class="pbadge">Popular</span><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Evil Eye Canvas Tote</div><div class="pdesc">Vibrant boho evil eye print &middot; Rope handles &middot; Natural cotton canvas, ethically sourced</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-macrame-sling.jpg" alt="Boho Craft Sling Bag" class="pimg" loading="lazy"><span class="pbadge badge-new">New</span><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Sling &amp; Crossbody</div><div class="pname">Boho Craft Sling Bag</div><div class="pdesc">Hand-woven textile panels &middot; Shell button &middot; Multiple pockets &middot; Artisan-made in India</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-jaipuri-handcraft.jpg" alt="Jaipuri Embroidered Bag" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Handbags</div><div class="pname">Jaipuri Embroidered Bag</div><div class="pdesc">Hand-embroidered Rajasthani motif &middot; Tassel detail &middot; Natural woven cotton</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-print-cotton-tote.jpg" alt="Mosaic Print Tote" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Mosaic Print Tote</div><div class="pdesc">Vivid hand-print canvas &middot; Rope handles &middot; Roomy &amp; lightweight for everyday carry</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-office-tote.jpg" alt="Structured Office Tote" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Structured Office Tote</div><div class="pdesc">Woven cotton + leather handles &middot; Geometric pattern &middot; Work-ready, zero synthetic lining</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-owl-tote.jpg" alt="Owl Print Tote" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Owl Print Canvas Tote</div><div class="pdesc">Artisan-printed owl &amp; floral motif &middot; Rope handles &middot; 100% natural cotton canvas</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-teal-tote.jpg" alt="Teal Mandala Tote" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Teal Mandala Tote</div><div class="pdesc">Rich dark canvas &middot; Intricate mandala print &middot; Rope handles &amp; tassel accent</div></div>
+    <div class="pcard reveal-fast"><div class="pimg-wrap"><img src="bag-summer-cotton-tote.jpg" alt="Summer Cotton Tote" class="pimg" loading="lazy"><div class="pquick">Shop on Shopee &rarr;</div></div><div class="pcat">Tote Bags</div><div class="pname">Summer Cotton Tote</div><div class="pdesc">Sun-bleached fringe edge &middot; Leather strap handles &middot; Embroidered Summer lettering</div></div>
   </div>
 </div>
 </div>
@@ -1010,10 +1012,10 @@ setTimeout(() => { document.body.style.overflow = ""; }, 4000);
     <h2 class="s-title s-title-light" style="margin-top:16px;">Our <em>Commitments</em></h2>
   </div>
   <div class="vals-grid">
-    <div class="val-card"><div class="val-icon-wrap">&#127807;</div><div class="val-accent"></div><div class="val-title">100% Natural</div><div class="val-desc">No synthetics, no shortcuts. Every material selected for its natural origin and biodegradable end-of-life.</div></div>
-    <div class="val-card"><div class="val-icon-wrap">&#127807;</div><div class="val-accent"></div><div class="val-title">Bamboo First</div><div class="val-desc">Fast-growing, carbon-sequestering, endlessly renewable. Bamboo is the backbone of our bath collection.</div></div>
-    <div class="val-card"><div class="val-icon-wrap">&#129309;</div><div class="val-accent"></div><div class="val-title">Artisan Heritage</div><div class="val-desc">Every bag traces its origin to skilled craftspeople using techniques passed down across generations in India.</div></div>
-    <div class="val-card"><div class="val-icon-wrap">&#9851;</div><div class="val-accent"></div><div class="val-title">Zero Waste Intent</div><div class="val-desc">Packaging and materials chosen to leave the lightest possible trace on the earth we all share.</div></div>
+    <div class="val-card"><div class="val-icon-wrap">&#127807;</div><div class="val-accent"></div><div class="val-title">Pure by Nature</div><div class="val-desc">No synthetics, no shortcuts. Every material is chosen for its natural origin &mdash; because living naturally starts with what touches your skin.</div></div>
+    <div class="val-card"><div class="val-icon-wrap">&#127807;</div><div class="val-accent"></div><div class="val-title">Bamboo First</div><div class="val-desc">Fast-growing, carbon-sequestering, and naturally antibacterial. Bamboo is how we bring the forest into your morning ritual.</div></div>
+    <div class="val-card"><div class="val-icon-wrap">&#129309;</div><div class="val-accent"></div><div class="val-title">Artisan Heritage</div><div class="val-desc">Every bag traces its origin to skilled hands in India using techniques carried forward across generations. Craft, not manufacture.</div></div>
+    <div class="val-card"><div class="val-icon-wrap">&#9851;</div><div class="val-accent"></div><div class="val-title">Light Footprint</div><div class="val-desc">Everything from material to packaging is chosen to leave the smallest possible mark. Pure living means caring for the earth, not just yourself.</div></div>
   </div>
 </section>
 
@@ -1161,7 +1163,7 @@ function switchTab(tab,btn){
   document.getElementById("tab-"+tab).classList.add("active");
   btn.classList.add("active");
   const t=document.getElementById("tabs");
-  window.scrollTo({top:t.getBoundingClientRect().bottom+window.scrollY-76,behavior:"smooth"});
+  window.scrollTo({top:t.getBoundingClientRect().bottom+window.scrollY-92,behavior:"smooth"});
 }
 </script>
 </body>
